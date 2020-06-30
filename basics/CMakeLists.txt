@@ -7,3 +7,4 @@ include_directories(
 )
 
 add_executable(max1 "src/max1.cpp")
+add_executable(max2 "src/max2.cpp")
