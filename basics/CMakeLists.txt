@@ -1,12 +1,10 @@
 project(basics)
 
-add_library(${PROJECT_NAME} INTERFACE)
-add_library(tmp::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
-
-target_include_directories(${PROJECT_NAME} INTERFACE
+include_directories(
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>"
     "$<INSTALL_INTERFACE:include>"
 )
 
-add_subdirectory(test)
+add_executable(max1 "src/max1.cpp")
+add_executable(maxcommon "src/maxcommon.cpp")
