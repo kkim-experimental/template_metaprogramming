@@ -2,6 +2,10 @@
 #include <string>
 
 #include <basics/max1.h>
+//#include <basics/maxauto.h>
+//#include <basics/maxcommon.h>
+//#include <basics/maxdecltype.h>
+//#include <basics/maxdecltypedecay.h>
 
 int main() {
     auto i = 42;
